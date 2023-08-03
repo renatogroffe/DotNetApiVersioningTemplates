@@ -29,13 +29,6 @@ builder.Services.AddApiVersioning(options =>
 
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.DefaultApiVersion = new ApiVersion(2, 0);
-
-    // Define a estrategia de selecao de versao da API - URL e, opcionalmente, QueryString
-    var apiVersionReaders = new List<IApiVersionReader>();
-    apiVersionReaders.Add(new UrlSegmentApiVersionReader());
-    if (builder.Configuration.GetValue<bool>("QueryStringVersioning"))
-        apiVersionReaders.Add(new QueryStringApiVersionReader());
-    options.ApiVersionReader = ApiVersionReader.Combine(apiVersionReaders);
 });
 
 builder.Services.AddVersionedApiExplorer(options =>

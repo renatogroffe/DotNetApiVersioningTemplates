@@ -65,7 +65,7 @@ public class ContadorController : ControllerBase
             Local = _CONTADOR.Local,
             Kernel = _CONTADOR.Kernel,
             Framework = _CONTADOR.Framework,
-            Mensagem = _configuration["MensagemVariavel"]
+            Mensagem = "Versao 1"
         };
     }
 }
