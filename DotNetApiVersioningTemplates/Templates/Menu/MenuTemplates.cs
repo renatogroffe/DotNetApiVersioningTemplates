@@ -9,7 +9,7 @@ public static class MenuTemplates
     {
         var textMenu = new TextMenu
         {
-            TitleText = "**** Creating a REST API with versioning ****",
+            TitleText = "**** Creating a REST API with versioning | © Renato Groffe - 2023 ****",
             ForegroundColor = ConsoleColor.Green,
             EraseAfterClose = false
         };

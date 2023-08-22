@@ -5,12 +5,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>dotnetapiversioning</ToolCommandName>
+    <ToolCommandName>dotnet-apiversioning</ToolCommandName>
     <Authors>Renato Groffe</Authors>
     <Company>Groffe</Company>
     <PackageTags>API;OpenAPI;Swagger;ApiVersioning</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>
       Tool for generating .NET projects with API versioning.
     </Description>
@@ -19,6 +20,10 @@
   <ItemGroup>
     <PackageReference Include="ConsoleTools" Version="1.1.1" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="docs\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
