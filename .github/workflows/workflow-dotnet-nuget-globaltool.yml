@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
     
 env:
-  PATH_PROJECT: ./DotNetApiVersioningTemplates/DotNetApiVersioningTemplates.csproj
+  PATH_PROJECT: ./src/DotNetApiVersioningTemplates/DotNetApiVersioningTemplates.csproj
   NUGET_SERVER: https://api.nuget.org/v3/index.json
   
 jobs:

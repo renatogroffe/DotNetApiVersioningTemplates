@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-apiversioning</ToolCommandName>
     <Authors>Renato Groffe</Authors>
@@ -15,6 +15,10 @@
     <Description>
       Tool for generating .NET projects with API versioning.
     </Description>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageProjectUrl>https://github.com/renatogroffe/DotNetApiVersioningTemplates</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<RepositoryUrl>https://github.com/renatogroffe/DotNetApiVersioningTemplates.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
